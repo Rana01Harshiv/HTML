@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure of Website</title>
+</head>
+
+<body>
+    <!-- this is for the navigation bar of website  -->
+    <header>
+        <nav>
+            <ul type="square">
+                <li>Home</li>
+                <li>About</li>
+                <li>Conatct</li>
+            </ul>
+            <ol>
+                <li>Home</li>
+                <li>About</li>
+                <li>Conatct</li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <!-- <p>
+            this is the main 
+        </p> -->
+        <section>
+            section 1
+            <hr>
+            <div>
+                <!-- table : tr , td , th  -->
+                <table>
+                    <!-- heading of the tabble  -->
+                    <caption>Marks </caption>
+                    <thead>
+                        <tr>
+                            <th>Rno</th>
+                            <!-- colspan is combine the table data in and put into one row  -->
+                            <th colspan="2">Name</th>
+                            <th>Std</th>
+                        </tr>
+                    </thead>
+                    <!-- data of the table  -->
+                    <tbody>
+                        <tr>
+                            <td>01</td>
+                            <td>Neha</td>
+                            <td>Rana</td>
+                            <td>11</td>
+                        </tr>
+                        <tr>
+                            <td>02</td>
+                            <td>Urja</td>
+                            <td>Rana</td>
+                            <td>10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <br>
+            <!-- target main is open the link in new tab  -->
+            <a href="https://www.google.com" target="_main">Google is here </a>
+            <!-- make the link with the img  -->
+            <a href="https://www.google.com" target="_main">
+                <p>image is contain the link</p>
+                <img src="https://images.unsplash.com/photo-1565787154274-c8d076ad34e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fENSSUNLRVQnfGVufDB8fDB8fHww"
+                    alt="cricket image" height="150px" width="150px">
+
+            </a>
+
+            <hr>
+        </section>
+        <br>
+        <section>
+            section 2
+            <!-- div take the complete right to left side space block element -->
+            <div>
+                <h2>about the html</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non blanditiis dolorem ad tempore facere
+                    atque ratione, rem, iste perspiciatis provident, ipsum nisi labore consequatur amet.
+                </p>
+            </div>
+            <div>
+                <h2>about the css</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis eum ab odit reiciendis dolorum
+                    repudiandae voluptatum eligendi nobis dolores libero, quisquam, veritatis sit obcaecati? Dolore
+                    tempore temporibus repellat cupiditate saepe ut harum facilis ipsa officiis?</p>
+            </div>
+            <!-- span take only that space which it will occupyy , inline element it-->
+            <span>
+                this is span
+            </span>
+            <br>
+            <span>
+                this is another span
+            </span>
+        </section>
+        <hr>
+        <section>
+            section 3
+            <div>
+                <h3>Form for subject selection</h3>
+                <form action="form.php">
+                    <input type="text" placeholder="Enter the Name:">
+                    <br>
+                     <!-- in the lable the for attribute is always same as the id of the input tag of radio check -->
+                     <!-- name in the radio check should be same as in the all threee radio buttons which you want to do some task -->
+                    <label for="sectionida">
+                        <input type="radio" value="sectiona" name="section" id="sectionida"> Section A
+                    </label>
+                    <label for="sectionidb">
+                        <input type="radio" value="sectionb" name="section" id="sectionidb"> Section B
+                    </label>
+                    <label for="sectionidc">
+                        <input type="radio" value="sectionc" name="section" id="sectionidc"> Section C
+                    </label><br>
+                    <textarea name="plan" id="plan" placeholder="Enter your future plan " cols="30" rows="10">
+                    </textarea>
+                    <br>
+                    <select name="plan" id="plan" >
+                        <option value="noplan">Select the Couse</option>
+                        <option value="bca">BCA</option>
+                        <option value="bcom">BCOM</option>
+                        <option value="bba">BBA</option>
+                    </select>
+                </form>
+            </div>
+        </section>
+        <hr>
+    </main>
+    <footer>
+        this is footer
+    </footer>
+</body>
+
+</html>
