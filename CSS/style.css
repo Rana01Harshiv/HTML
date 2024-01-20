@@ -1,0 +1,39 @@
+body{
+    /* color: yellow; */
+    background-color: rgb(63, 66, 227);
+}
+#sec1{
+    background-color: brown;
+}
+#first{
+    background-color: black;
+    color: aliceblue;
+}
+#secound{
+    background-color: chocolate;
+    color: yellow;
+}
+#third{
+    background-color: springgreen;
+    color: black;
+}
+/* selectors  */
+/* id selectors class selectors  */
+
+/* for the id  */
+#sec2{
+    background-color: aquamarine;
+}
+/* for the class  */
+.para{
+    color:black;
+}
+/* for the tag  */
+h3{
+    color: blueviolet;
+    background-color: aqua;
+}
+p{
+    background-color: chartreuse;
+    /* color: rgb(218, 20, 56); */
+}
