@@ -4,137 +4,370 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Structure of Website</title>
+    <title>Booking</title>
 </head>
 
-<body>
-    <!-- this is for the navigation bar of website  -->
-    <header>
-        <nav>
-            <ul type="square">
-                <li>Home</li>
-                <li>About</li>
-                <li>Conatct</li>
-            </ul>
-            <ol>
-                <li>Home</li>
-                <li>About</li>
-                <li>Conatct</li>
-            </ol>
-        </nav>
-    </header>
-    <main>
-        <!-- <p>
-            this is the main 
-        </p> -->
-        <section>
-            section 1
-            <hr>
-            <div>
-                <!-- table : tr , td , th  -->
-                <table>
-                    <!-- heading of the tabble  -->
-                    <caption>Marks </caption>
-                    <thead>
-                        <tr>
-                            <th>Rno</th>
-                            <!-- colspan is combine the table data in and put into one row  -->
-                            <th colspan="2">Name</th>
-                            <th>Std</th>
-                        </tr>
-                    </thead>
-                    <!-- data of the table  -->
-                    <tbody>
-                        <tr>
-                            <td>01</td>
-                            <td>Neha</td>
-                            <td>Rana</td>
-                            <td>11</td>
-                        </tr>
-                        <tr>
-                            <td>02</td>
-                            <td>Urja</td>
-                            <td>Rana</td>
-                            <td>10</td>
-                        </tr>
-                    </tbody>
+<body width="100%">
+    <table bgcolor="#034db5" width="100%" height="130px" border="1">
+        <tr>
+            <td>
+                <h1 style="color: white;">
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                    Booking.com
+                </h1>
+            </td>
+
+            <td align="center" width="200px">
+                <a href="" style="color: white; font-size: 20px;">
+                    <h4>
+                        Help?
+                    </h4>
+                </a>
+            </td>
+
+            <td align="center">
+                <Button style="height: 30px; width: 90px;"> Register</Button>
+
+            </td>
+            <td align="center">
+                <button style="height: 30px; width: 90px;"> Login</button>
+
+            </td>
+        </tr>
+        <tr>
+            <td colspan="4">
+                <table width="100%">
+                    <tr>
+                        <td align="center">
+                            <h3 style="color: whitesmoke;"> Hurry Up !! Book Your Happy Days Now ! </h2>
+                        </td>
+                    </tr>
                 </table>
-            </div>
+            </td>
+        </tr>
+    </table>
+    <table border="1" width="100%" height="550px" background="i2.jpg">
+        <tr>
+            <td>
+                <table border="4" align="center" width="50%">
+                    <tr>
+                        <td colspan="4">
 
-            <br>
-            <!-- target main is open the link in new tab  -->
-            <a href="https://www.google.com" target="_main">Google is here </a>
-            <!-- make the link with the img  -->
-            <a href="https://www.google.com" target="_main">
-                <p>image is contain the link</p>
-                <img src="https://images.unsplash.com/photo-1565787154274-c8d076ad34e7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fENSSUNLRVQnfGVufDB8fDB8fHww"
-                    alt="cricket image" height="150px" width="150px">
+                            <h1 style="color: black;">Resorts</h2>
+                                <br>
+                                <h4 style="color: black;">Treat yourself! Your dream resort stay is just a few clicks
+                                    away.
+                                </h4>
+                        </td>
+                    </tr>
+                    <tr style="color: white;">
+                        <td align="center">
+                            <p><b>City</b></p>
+                        </td>
+                        <td align="center">
+                            <p style="color: white;"><b>Checkin-Date</b></p>
+                        </td>
+                        <td align="center">
+                            <p><b>CheckOut-Date</b></p>
+                        </td>
+                        <td align="center">
+                            <p><b>Persons</b></p>
+                        </td>
 
-            </a>
 
-            <hr>
-        </section>
-        <br>
-        <section>
-            section 2
-            <!-- div take the complete right to left side space block element -->
-            <div>
-                <h2>about the html</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non blanditiis dolorem ad tempore facere
-                    atque ratione, rem, iste perspiciatis provident, ipsum nisi labore consequatur amet.
-                </p>
-            </div>
-            <div>
-                <h2>about the css</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis eum ab odit reiciendis dolorum
-                    repudiandae voluptatum eligendi nobis dolores libero, quisquam, veritatis sit obcaecati? Dolore
-                    tempore temporibus repellat cupiditate saepe ut harum facilis ipsa officiis?</p>
-            </div>
-            <!-- span take only that space which it will occupyy , inline element it-->
-            <span>
-                this is span
-            </span>
-            <br>
-            <span>
-                this is another span
-            </span>
-        </section>
-        <hr>
-        <section>
-            section 3
-            <div>
-                <h3>Form for subject selection</h3>
-                <form action="form.php">
-                    <input type="text" placeholder="Enter the Name:">
-                    <br>
-                     <!-- in the lable the for attribute is always same as the id of the input tag of radio check -->
-                     <!-- name in the radio check should be same as in the all threee radio buttons which you want to do some task -->
-                    <label for="sectionida">
-                        <input type="radio" value="sectiona" name="section" id="sectionida"> Section A
-                    </label>
-                    <label for="sectionidb">
-                        <input type="radio" value="sectionb" name="section" id="sectionidb"> Section B
-                    </label>
-                    <label for="sectionidc">
-                        <input type="radio" value="sectionc" name="section" id="sectionidc"> Section C
-                    </label><br>
-                    <textarea name="plan" id="plan" placeholder="Enter your future plan " cols="30" rows="10">
-                    </textarea>
-                    <br>
-                    <select name="plan" id="plan" >
-                        <option value="noplan">Select the Couse</option>
-                        <option value="bca">BCA</option>
-                        <option value="bcom">BCOM</option>
-                        <option value="bba">BBA</option>
-                    </select>
-                </form>
-            </div>
-        </section>
-        <hr>
-    </main>
-    <footer>
-        this is footer
-    </footer>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <select name="" id="">
+                                <option value="">Gujarat</option>
+                                <option value="">Mumbai</option>
+                                <option value="">Rajsthan</option>
+                                <option value="">Goa</option>
+                                <option value="">Delhi</option>
+
+                            </select>
+                        </td>
+                        <td align="center">
+                            <input type="date" name="" id="">
+                        </td>
+
+                        <td align="center">
+                            <input type="date" name="" id="">
+                        </td>
+
+                        <td align="center">
+                            <table border="1" style="color: white; width: 60px; ">
+                                <tr>
+                                    <td> + </td>
+                                    <td> 1 </td>
+                                    <td> - </td>
+                                </tr>
+
+                            </table>
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td colspan="4" align="center">
+                            <br>
+                            <button style="width: 130px; height: 30px;">Search</button>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+
+        </tr>
+    </table>
+
+
+    <table width="1000px" align="center" border="1" height="300px">
+        <tr>
+            <td align="center">
+
+                <h2>
+                    Featured Resorts Destinatation</h3>
+                    <p>Check out this famous Resorts</p>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <table align="center" width="1000px">
+                    <tr>
+                        <td>
+                            <a href="">
+                                <img src="h1.jpg" alt="" width="100%" height="230px">
+
+                            </a>
+                        </td>
+
+                        <td>
+                            <a href="">
+                                <img src="h1.jpg" alt="" width="100%" height="230px">
+
+                            </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img src="h1.jpg" alt="" width="100%" height="230px">
+                            </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img src="h1.jpg" alt="" width="100%" height="230px">
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <p>Ranakingdom</p>
+                            <p>Gujarat</p>
+                            <h4>129 Resorts</h5>
+                        </td>
+
+                        <td>
+                            <p>Ranakingdom</p>
+                            <p>Gujarat</p>
+                            <h4>19 Resorts</h5>
+
+                        </td>
+                        <td>
+                            <p>Ranakingdom</p>
+                            <p>Gujarat</p>
+                            <h4>109 Resorts</h5>
+
+                        </td>
+                        <td>
+                            <p>Ranakingdom</p>
+                            <p>Gujarat</p>
+                            <h4>12 Resorts</h5>
+
+                        </td>
+                    </tr>
+                </table>
+
+
+            </td>
+
+        </tr>
+    </table>
+    <hr>
+    <table align="center" width="1000px">
+        <tr>
+            <td colspan="4">
+
+                <h2>
+                    We Love This Resorts in Gujarat</h3>
+                    <p>Check out this famous Resorts</p>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <a href="">
+                    <img src="h1.jpg" alt="" width="100%" height="230px">
+                </a>
+            </td>
+
+            <td>
+                <a href="">
+                    <img src="h1.jpg" alt="" width="100%" height="230px">
+                </a>
+            </td>
+            <td>
+                <a href="">
+                    <img src="h1.jpg" alt="" width="100%" height="230px">
+                </a>
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <a href="">
+                    <p>Ranakingdom</p>
+                </a>
+                <p>Gujarat-Surat Lorem ipsum dolor sit amet consectetur adipisicing elit. A!</p>
+                <p>amet consectetur adipisicing elit. Pariatur repellat necessitatibus velit
+                    delectus ad ut soluta veritatis mollitia, deserunt eius consequuntur, hic ab labore possimus.</p>
+                <p>⭐⭐⭐⭐⭐⭐⭐<br><br></p>
+                <button style="width: 100%; height: 25px;">Reserve This Resort</button>
+
+            </td>
+
+            <td>
+                <a href="">
+                    <p>Ranakingdom</p>
+                </a>
+
+                <p>Gujarat-Surat Lorem ipsum dolor sit amet consectetur adipisicing elit. A!</p>
+                <p>amet consectetur adipisicing elit. Pariatur repellat necessitatibus velit
+                    delectus ad ut soluta veritatis mollitia, deserunt eius consequuntur, hic ab labore possimus.</p>
+                <p>⭐⭐⭐⭐⭐⭐<br><br></p>
+                <button style="width: 100%; height: 25px;">Reserve This Resort</button>
+
+            </td>
+            <td>
+                <a href="">
+                    <p>Ranakingdom</p>
+                </a>
+                <p>Gujarat-Surat Lorem ipsum dolor sit amet consectetur adipisicing elit. A!</p>
+                <p>amet consectetur adipisicing elit. Pariatur repellat necessitatibus velit
+                    delectus ad ut soluta veritatis mollitia, deserunt eius consequuntur, hic ab labore possimus.</p>
+                <p>⭐⭐⭐⭐⭐<br><br></p>
+                <button style="width: 100%; height: 25px;">Reserve This Resort</button>
+            </td>
+
+        </tr>
+    </table>
+    <hr>
+    <table border="1" width="1000px" align="center">
+        <tr>
+            <td>
+                <h3>Most Booked Resorts This Month</h3>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table border="1" width="1000px">
+                    <tr align="center">
+                        <td>
+                            <a href="">
+                                <img src="h2.jpg" alt="" width="50%" height="150px">
+                                <p>Blue Berry Resort</p>
+                                <p>Gujarat-Surat</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img src="h2.jpg" alt="" width="50%" height="150px">
+                                <p>Blue Berry Resort</p>
+                                <p>Gujarat-Surat</p>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr align="center">
+                        <td>
+                            <a href="">
+                                <img src="h2.jpg" alt="" width="50%" height="150px">
+                                <p>Blue Berry Resort</p>
+                                <p>Gujarat-Surat</p>
+                            </a>
+                        </td>
+                        <td>
+                            <a href="">
+                                <img src="h2.jpg" alt="" width="50%" height="150px">
+                                <p>Blue Berry Resort</p>
+                                <p>Gujarat-Surat</p>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table bgcolor="#034db5" width="100%" height="130px">
+        <tr style="color: white;">
+            <td align="center" colspan="2">
+                <h4>Save Time Save Money</h4>
+                <p>SignUp And We'll send the best deal to you </p>
+                <input height="130px" type="email" name="" id="" placeholder="Your Email Address">
+                <button style="width: 90px;">Subscribe</button>
+                <hr>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="" style="color: white;">Home</a>
+            </td>
+            <td align="right">
+                <a href="" style="color: white;">Instagram</a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="" style="color: white;">Resorts</a>
+            </td>
+            <td align="right">
+                <a href="" style="color: white;">Facebook</a>
+
+            </td>
+
+        </tr>
+
+        <tr>
+            <td>
+                <a href="" style="color: white;">About</a>
+            </td>
+            <td align="right">
+                <a href="" style="color: white;">Twitter</a>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td>
+                <a href="" style="color: white;">ContactUs</a>
+            </td>
+            <td align="right">
+                <a href="" style="color: white;">Telegram</a>
+
+            </td>
+
+        </tr>
+        <tr>
+            <td align="center" colspan="2">
+                <hr>
+                <h5 style="color: white;">Copyright © 1996–2024 Booking.com™. All rights reserved.
+                </h5>
+                <h6 style="color: white;">Booking.com is part of Booking Holdings Inc., the world leader in online
+                    travel and related services.</h6>
+
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
