@@ -122,54 +122,87 @@ console.log(cricketer.age);
 
 
 // array 
-let marks=[20,39,68,90];
-console.log(marks);
 
-console.log("by using for each loop");
-marks.forEach(element =>{
-    console.log(element);
-});
+// let marks=[20,39,68,90];
+// console.log(marks);
 
-console.log("by using for loop");
-for (let i=0;i<marks.length;i++){
-    console.log(marks[i]);
-}
-console.log("by using for of loop");
-for (let i of marks){
-    console.log(i);
-}
-let sum=0;
-console.log("Average marks of array marks");
-for(let i=0;i<marks.length;i++){
-    sum += marks[i];
-}
-let avg = sum/marks.length;
-console.log("Total marks "+sum);
-console.log("Total Students "+marks.length);
-console.log("Average marks "+avg);
+// console.log("by using for each loop");
+// marks.forEach(element =>{
+//     console.log(element);
+// });
 
-// exercise 1
-let sub = ["eng","hindi","gujarati","science"];
-console.log("Making the upper case ");
-for(let i of sub){
-    console.log(i.toUpperCase());
+// console.log("by using for loop");
+// for (let i=0;i<marks.length;i++){
+//     console.log(marks[i]);
+// }
+// console.log("by using for of loop");
+// for (let i of marks){
+//     console.log(i);
+// }
+// let sum=0;
+// console.log("Average marks of array marks");
+// for(let i=0;i<marks.length;i++){
+//     sum += marks[i];
+// }
+// let avg = sum/marks.length;
+// console.log("Total marks "+sum);
+// console.log("Total Students "+marks.length);
+// console.log("Average marks "+avg);
+
+// // exercise 1
+// let sub = ["eng","hindi","gujarati","science"];
+// console.log("Making the upper case ");
+// for(let i of sub){
+//     console.log(i.toUpperCase());
+// }
+
+// // exercise 2
+// let price = [200,400,500,600];
+// for(let i=0;i<price.length;i++){
+//     console.log(price[i]);
+//     let temp = price[i] / 10;
+//     console.log("Discount is:" + temp);
+//     price[i] -= temp;
+//     console.log("After Discount Price is: "+price[i]);
+// }
+
+// // method in arrays
+// let nations = ["india","aus","wid","Pak"];
+// console.log(nations);
+// nations.push("afg","eng");
+// console.log(nations);
+// nations.pop("eng");
+// console.log(nations);a
+// console.log(nations.toString());
+
+// functions and methods 
+
+// function initializatioin
+function myfun(){
+    console.log("my first function");
+}
+// function calling
+myfun();
+
+function myfun1(msg){
+    console.log(msg);
+}
+// function calling
+myfun1("hello harshiv");
+
+// arraow function
+const myarraow = (a,b) =>{
+    console.log(a+b);
 }
 
-// exercise 2
-let price = [200,400,500,600];
-for(let i=0;i<price.length;i++){
-    console.log(price[i]);
-    let temp = price[i] / 10;
-    console.log("Discount is:" + temp);
-    price[i] -= temp;
-    console.log("After Discount Price is: "+price[i]);
-}
-
-// method in arrays
-let nations = ["india","aus","wid","Pak"];
-console.log(nations);
-nations.push("afg","eng");
-console.log(nations);
-nations.pop("eng");
-console.log(nations);
-console.log(nations.toString());
+// count the vowels with the arrow function
+const myvowels = (str) => {
+    let cnt =1;
+    for(let i of str){
+        if(i === 'a' ||i === 'e'||i === 'i'||i === 'o'||i === 'u' ){
+            cnt++;
+            break;
+        }
+    }
+    console.log("Total Vowels = " + cnt);
+}  
