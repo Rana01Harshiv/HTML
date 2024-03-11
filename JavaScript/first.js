@@ -178,31 +178,57 @@ console.log(cricketer.age);
 // functions and methods 
 
 // function initializatioin
-function myfun(){
-    console.log("my first function");
-}
-// function calling
-myfun();
 
-function myfun1(msg){
-    console.log(msg);
-}
-// function calling
-myfun1("hello harshiv");
+// function myfun(){
+//     console.log("my first function");
+// }
+// // function calling
+// myfun();
 
-// arraow function
-const myarraow = (a,b) =>{
-    console.log(a+b);
-}
+// function myfun1(msg){
+//     console.log(msg);
+// }
+// // function calling
+// myfun1("hello harshiv");
+
+// // arraow function
+// const myarraow = (a,b) =>{
+//     console.log(a+b);
+// }
 
 // count the vowels with the arrow function
-const myvowels = (str) => {
-    let cnt =1;
-    for(let i of str){
-        if(i === 'a' ||i === 'e'||i === 'i'||i === 'o'||i === 'u' ){
-            cnt++;
-            break;
-        }
-    }
-    console.log("Total Vowels = " + cnt);
-}  
+// const myvowels = (str) => {
+//     let cnt =1;
+//     for(let i of str){
+//         if(i === 'a' ||i === 'e'||i === 'i'||i === 'o'||i === 'u' ){
+//             cnt++;
+//             break;
+//         }
+//     }
+//     console.log("Total Vowels = " + cnt);
+// }  
+
+
+// function can be pass as an argument into another function also 
+
+// function abc(){
+//     console.log("harshiv");
+// }
+
+// function myfun(abc){
+//     return abc;
+// }
+
+// let h2 = document.querySelector("h2");
+
+// console.dir(h2);
+
+// h2.innerText = h2.innerText + " harshiv here ";
+
+let divs = document.querySelectorAll(".box");
+divs[0].innerText = "new value to div 1";
+divs[1].innerText = "something unique to div 2";
+divs[2].innerText = "yeahhh finalyy we understood";
+console.log(divs);
+
+

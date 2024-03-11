@@ -1,39 +1,79 @@
-body{
-    /* color: yellow; */
-    background-color: rgb(63, 66, 227);
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
 }
-#sec1{
-    background-color: brown;
+nav{
+    background-color: #faf9f9;
+    /* color: #9c1515; */
+    /* justify-content: center; */
+    display: flex;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 1000;
 }
-#first{
-    background-color: black;
-    color: aliceblue;
-}
-#secound{
-    background-color: chocolate;
-    color: yellow;
-}
-#third{
-    background-color: springgreen;
-    color: black;
-}
-/* selectors  */
-/* id selectors class selectors  */
 
-/* for the id  */
-#sec2{
-    background-color: aquamarine;
+nav:hover{
+    background-color: rgb(55, 137, 214);
 }
-/* for the class  */
-.para{
-    color:black;
+
+nav img{
+    margin-left: 80px;
+    height: 40px;
+    width: 40px;
+    text-decoration: none;
+
+    margin-top: 20px;
+    border-radius: 120px;
 }
-/* for the tag  */
-h3{
-    color: blueviolet;
+nav h3{
+    margin-left: 15px;
+    margin-top: 25px;
+    font-size: 25px;
+    cursor: pointer;
+    text-decoration: none;
+    justify-content: center;
+    color: rgb(134, 224, 142);
+
+}
+
+
+.btn-signin , .btn-signup {
+    float: right;
+    align-items: end;
+    padding: 14px 20px;
+    margin: 18px 20px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.btn-signin{
+
+    margin-left: 1000px;
+}
+
+/* 
+
+body of the page 
+
+*/
+/* 
+#container-body{
+    display: flex;
     background-color: aqua;
+    height: 600px;
+    align-content: center;
+    justify-content: center;
 }
-p{
-    background-color: chartreuse;
-    /* color: rgb(218, 20, 56); */
-}
+
+#container-body .sec{
+    background-color: rgb(153, 94, 94);
+    align-items: center;
+    margin: 10px;    
+    width: 100%;
+} */
