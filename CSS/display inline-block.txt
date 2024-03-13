@@ -5,3 +5,9 @@ overflow:auto
 position:relative
 top,bottom ,left,right
 position:sticky
+
+
+max-width
+justifycontent space around 
+margin auto
+display flex
