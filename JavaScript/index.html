@@ -1,17 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script>
+        function myfunction(){
+            document.getElementById('p3').innerHTML = "paragraph is changed after click"
+        }
+    </script>
     
 </head>
+
 <body>
-    <h2>helllo</h2>
+    <!-- <h2>helllo</h2>
+
     <div class="box">first div </div>
     <div class="box">secound div </div>
-    <div class="box">third div </div>
+    <div class="box">third div </div> -->
 
-    <script src="first.js"></script>
+
+    <button class="btn" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display date and
+        time</button>
+    <p id="demo"></p>
+
+    <button id="b1">Date and time</button>
+    <p id="demo1"></p>
+
+
+    <button onclick="document.getElementById('p1').style.fontSize ='40px'">fontsize</button>
+    <p id="p1">change the font size </p>
+
+    <div id="d1">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam soluta voluptatem tempore animi eius quia
+            eligendi molestias odio repellat laborum error nisi recusandae neque, debitis quaerat, perspiciatis unde
+            libero vero.</p>
+    </div>
+    <button ondblclick="document.getElementById('d1').style.display='none' ">double click to hiding the div</button>
+
+    <p>show the hidden html elements</p>
+    <p id="p2" style="display: none;"></p>
+    <button onclick="document.getElementById('p2').style.display='block'">show the hidden elements</button>
+
+
+    <p id="p3">before paragraph</p>
+    <button onclick="myfunction()">Chang para</button>
+    <!-- <script src="first.js"></script> -->
 </body>
+
 </html>
